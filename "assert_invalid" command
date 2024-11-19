@@ -1,1 +1,9 @@
-
+```
+{
+  "type": "assert_invalid",
+  "line": <number>,
+  "filename": <string>,
+  "text": <string>,
+  "module_type": "binary" | "text"
+}
+```
