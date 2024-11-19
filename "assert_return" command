@@ -1,1 +1,8 @@
-
+```
+{
+ "type": "assert_return",
+ "line": <number>,
+ "action": <action>
+ "expected": <expected>
+}
+```
