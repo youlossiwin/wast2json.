@@ -1,1 +1,9 @@
 
+```
+{
+ "type": "module",
+ "line": <number>,
+ ("name": <string>,)?
+ "filename": <string>
+}
+```
