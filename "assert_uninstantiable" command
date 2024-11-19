@@ -1,1 +1,9 @@
-
+```
+{
+  "type": "assert_uninstantiable",
+  "line": <number>,
+  "filename": <string>,
+  "text": <string>,
+  "module_type": "binary" | "text"
+}
+```
