@@ -1,1 +1,68 @@
 
+```wasm
+(module
+  (func (export "add") (param i32 i32) (result i32)
+    local.get 0
+    local.get 1
+    i32.add)
+
+  (func (export "trap")
+    unreachable)
+)
+
+(assert_return (invoke "add" (i32.const 11) (i32.const 22)) (i32.const 33))
+
+(assert_trap (invoke "trap") "unreachable")
+
+(assert_malformed
+  (module quote "(modulee)")
+  "syntax error"
+)
+```
+```
+{
+  "source_filename": "example.wast",
+  "commands": [
+    {
+      "type": "module",
+      "line": 1,
+      "filename": "example.0.wasm"
+    },
+
+    {
+      "type": "assert_return",
+      "line": 11,
+      "action": {
+        "type": "invoke",
+        "field": "add",
+        "args": [
+          {"type": "i32", "value": "11"},
+          {"type": "i32", "value": "22"}
+        ]
+      },
+      "expected": [
+        {"type": "i32", "value": "33"}
+      ]
+    },
+
+    {
+      "type": "assert_trap",
+      "line": 13,
+      "action": {
+        "type": "invoke",
+        "field": "trap",
+        "args": []
+      },
+      "text": "unreachable",
+    },
+
+    {
+      "type": "assert_malformed",
+      "line": 16,
+      "filename": "example.1.wat",
+      "text": "syntax error",
+      "module_type": "text"
+    }
+  ]
+}
+```
