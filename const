@@ -10,3 +10,34 @@
 | "externref" | `{"type": "externref", "value": <string>}` |
 | "funcref" | `{"type": "funcref", "value": <string>}` |
 | "exnref" | `{"type": "exnref", "value": <string>}` |
+
+```
+{
+  "type": "v128",
+  "lane_type": "i8" | "i16" | "i32" | "f32" | "f64",
+  "value": [ (<string>,)* ]
+}
+```
+```
+("type": "i32", "value": "34"}
+```
+```
+("type": "f32", "value": "1065353216"}
+```
+
+| "lane_type" | #lanes |
+| - | - |
+| "i8" | 16 |
+| "i16" | 8 |
+| "i32" | 4 |
+| "i64" | 2 |
+| "f32" | 4 |
+| "f64" | 2 |
+
+```
+{
+  "type": "v128",
+  "lane_type": "i32",
+  "value": ["0", "1", "2", "3"]
+}
+```
