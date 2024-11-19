@@ -1,1 +1,9 @@
+```
+{
+ "type": "assert_exhaustion",
+ "line": <number>,
+ "action": <action>,
+ "text": <string>
+}
+```
 
