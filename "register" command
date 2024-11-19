@@ -1,1 +1,7 @@
-
+```
+{
+  "type": "register",
+  ("name": <string>,)?
+  "as": <string>
+}
+```
