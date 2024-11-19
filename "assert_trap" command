@@ -1,1 +1,8 @@
-
+```
+{
+ "type": "assert_trap",
+ "line": <number>,
+ "action": <action>,
+ "text": <string>
+}
+```
