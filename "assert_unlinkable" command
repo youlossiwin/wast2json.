@@ -1,1 +1,9 @@
-
+```
+{
+  "type": "assert_unlinkable",
+  "line": <number>,
+  "filename": <string>,
+  "text": <string>,
+  "module_type": "binary" | "text"
+}
+```
