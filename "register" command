@@ -5,3 +5,13 @@
   "as": <string>
 }
 ```
+
+```
+{
+  "type": "register",
+  "as": "my_module"
+}
+```
+```wasm
+(import "my_module" "my_export" ...)
+```
