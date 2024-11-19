@@ -1,1 +1,31 @@
+```
+[
+  {"type": "i32", "value": "1"}
+]
+```
+```
+[
+  {"type": "f32", "value": "nan:canonical"}
+]
+```
+```
+[
+  {
+    "type": "v128",
+    "lane_type": "f32",
+    "value": [
+      "0",
+      "nan:arithmetic",
+      "0",
+      "nan:arithmetic",
+    ]
+  }
+]
+```
+```
+[
+  {"type": "i32", "value": "1"},
+  {"type": "i64", "value": "2"}
+]
+```
 
