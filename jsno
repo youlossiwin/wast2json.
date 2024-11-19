@@ -1,1 +1,12 @@
-
+| type | extra properties |
+| - | - |
+| "module" | `{..., "name": <string>, "filename": <string>}` |
+| "action" | `{..., "action": <action>}` |
+| "assert_return" | `{..., "action": <action>, "expected": <expected>}` |
+| "assert_exhaustion" | `{..., "action": <action>, "text": <string>}` |
+| "assert_trap" | `{..., "action": <action>, "text": <string>}` |
+| "assert_invalid" | `{..., "filename": <string>, "text": <string>, "module_type": <module_type>}` |
+| "assert_malformed" | `{..., "filename": <string>, "text": <string>, "module_type": <module_type>}` |
+| "assert_uninstantiable" | `{..., "filename": <string>, "text": <string>, "module_type": <module_type>}` |
+| "assert_unlinkable" | `{..., "filename": <string>, "text": <string>, "module_type": <module_type>}` |
+| "register" | `{..., "name": <string>, "as": <string>}` |
