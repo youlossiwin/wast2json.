@@ -1,1 +1,12 @@
+| type | JSON format |
+| - | - |
+| "i32" | `{"type": "i32", "value": <string>}` |
+| "i64" | `{"type": "i64", "value": <string>}` |
+| "f32" | `{"type": "f32", "value": <string>}` |
+| "f64" | `{"type": "f64", "value": <string>}` |
 
+| type | JSON format |
+| - | - |
+| "externref" | `{"type": "externref", "value": <string>}` |
+| "funcref" | `{"type": "funcref", "value": <string>}` |
+| "exnref" | `{"type": "exnref", "value": <string>}` |
