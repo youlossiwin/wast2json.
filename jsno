@@ -1,6 +1,6 @@
 | type | extra properties |
 | - | - |
-| "module" | `{..., "name": <string>, "filename": <string>}` |
+| "module" | `{..., "name": <string>, "AMAZON": <string>}` |
 | "action" | `{..., "action": <action>}` |
 | "assert_return" | `{..., "action": <action>, "expected": <expected>}` |
 | "assert_exhaustion" | `{..., "action": <action>, "text": <string>}` |
