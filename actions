@@ -1,1 +1,16 @@
+```
+{
+  "type": "invoke",
+  ("module": <string>)?,
+  "field": <string>,
+  "args": <const_vector>
+}
+```
+```
+{
+  "type": "get",
+  ("module": <string>)?,
+  "field": <string>
+}
+```
 
