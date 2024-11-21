@@ -1,6 +1,6 @@
 ```
 {
-  "type": "invoke",
+  "action": "get",
   ("module": <string>)?,
   "field": <string>,
   "args": <const_vector>
